@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llContent">
+
+        <ImageView
+            android:id="@+id/imgRecyclerRowItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/foodie_zone_logo">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/txtRecyclerRowItem"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/imgRecyclerRowItem"
+            android:layout_marginStart="103dp"
+            android:padding="10dp"
+            android:text="Restaurant Name"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtRatingRecyclerRowItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtRecyclerRowItem"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="28dp"
+            android:drawableLeft="@drawable/ic_fav"
+            android:drawablePadding="4dp"
+            android:gravity="center"
+            android:text="4.5"
+            android:textColor="#FFC23C"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/txtPriceRecyclerRowItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRecyclerRowItem"
+            android:layout_alignStart="@+id/imgRecyclerRowItem"
+            android:layout_marginStart="103dp"
+            android:layout_marginTop="11dp"
+            android:padding="10dp"
+            android:text="Price"
+            android:textColor="#59CE8F"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

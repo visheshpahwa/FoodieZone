@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ForgotActivity"
+    android:orientation="vertical"
+    android:background="@color/bg_foodie">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/foodie_zone_logo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Registered Email and Mobile Number:"
+        android:layout_gravity="center"
+        android:textSize="15sp"
+        android:layout_margin="20dp"
+        android:textStyle="bold"
+        android:id="@+id/txtHintForgot"
+        />
+
+    <EditText
+        android:id="@+id/etMobileForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:hint="Mobile Number(10 digits)"
+        android:textColor="#1C3879"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/etEmailForgot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="10dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#1C3879"
+        android:textSize="20sp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Next"
+        android:backgroundTint="#1C3879"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:id="@+id/btnNextForgot"
+        />
+
+</LinearLayout>
